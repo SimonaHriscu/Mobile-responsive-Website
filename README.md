@@ -25,3 +25,9 @@
 <p align="center">
     <img src="https://i.imgur.com/dajWDcD.png?1">
 </p>
+
+## iPad version 
+
+<p align="center">
+  <img src="https://i.imgur.com/cdOprhV.png?1">
+</p>
