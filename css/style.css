@@ -1,3 +1,5 @@
+/*###############Default Settings#####################*/
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/*###############Mobile < 600px#####################*/
 @media only screen and (max-width: 600px) {
   .container {
     width: 100vw;
@@ -74,11 +77,12 @@ body {
     text-align: center;
   }
   .text-box {
-    width: 100vw;
+    width: 98vw;
     height: 22vh;
     display: flex;
     align-items: center;
     text-align: center;
+    margin: 0 1vw;
   }
   .buttons {
     width: 100vw;
@@ -123,7 +127,133 @@ body {
   } 
 }
 
-@media only screen and (min-width: 600px) {
+/*############### 600px- 900px ###################*/
+@media screen and (min-width:600px) and (max-width:900px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .logo {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .logo img {
+    width: 25vw;
+    height: 6vh;
+  }
+  .menu {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-list {
+    width: auto;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  ul li {
+    list-style: none;
+    margin: 0 1vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+  }
+  .hamburger {
+    display: none;
+    background-color: black;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+  }
+  
+  .content {
+    width: 100vw;
+    height: 80vh;
+    overflow-y: scroll;
+  }
+
+  .text {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    width: 100vw;
+    height: 17vh;
+    font-size: 3.8vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .text-box {
+    width: 98vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 1vw;
+  }
+  .buttons {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons input {
+    width: 27vw;
+    height: 5vh;
+    background-color: #29be56;
+    margin-right: 2vw;
+    border-radius: 8%;
+    border: none;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+  input:last-child {
+    background-color: #3498db;
+  }
+
+  .photo {
+    width: 100vw;
+    height: 80vh;
+  }
+  .photo img:first-child {
+    width: 40vw;
+    height: 60vh;
+    position: relative;
+    top: 5vh;
+    left:40vw;  
+    
+  }
+  .photo img:last-child {
+    width: 40vw;
+    height: 60vh;
+    position: relative;
+    top: 15vh;
+    right: 15vw; 
+    
+  } 
+}
+
+/*############### 900px- 1200px ###################*/
+@media screen and (min-width:900px) and (max-width:1200px)  {
   body {
     display: flex;
     flex-direction: row;
@@ -186,7 +316,6 @@ body {
   .text {
     width: 30vw;
     height: 70vh;
-    /* border:2px white solid; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -245,3 +374,247 @@ body {
     bottom: 48vh;
   }
 }
+
+/*############### 1200px- 1600px ###################*/
+@media screen and (min-width:1200px) and (max-width:1600px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 60vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 20vw 40vw;
+    grid-template-rows: 10vh 70vh;
+    grid-template-areas:
+      "box1 box2"
+      "box3 box3";
+  }
+  .logo {
+    grid-area: box1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .logo img {
+    width: 10vw;
+    height: 6vh;
+  }
+
+  .menu {
+    grid-area: box2;
+    width: 100%;
+  }
+  .menu-list {
+    width: auto;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  ul li {
+    list-style: none;
+    margin: 0 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+  }
+  .hamburger {
+    display: none;
+    background-color: black;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+  }
+
+  .content {
+    grid-area: box3;
+    display: flex;
+    flex-direction: row;
+  }
+  .text {
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .title {
+    width: 30vw;
+    height: 23.3vh;
+    font-size: 2.5vw;
+    display: flex;
+    align-items: flex-end;
+  }
+  .text-box {
+    width: 30vw;
+    height: 23.3vh;
+    display: flex;
+    align-items: center;
+  }
+  .buttons {
+    width: 30vw;
+    height: 23.3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .buttons input {
+    width: 12vw;
+    height: 5vh;
+    background-color: #29be56;
+    margin-right: 1vw;
+    border-radius: 8%;
+    border: none;
+    font-weight: bold;
+  }
+  input:last-child {
+    background-color: #3498db;
+  }
+
+  .photo {
+    width: 30vw;
+    height: 70vh;
+  }
+  .photo img:first-child {
+    width: 15vw;
+    height: 50vh;
+    position: relative;
+    left: 14vw;
+  }
+  .photo img:last-child {
+    width: 15vw;
+    height: 50vh;
+    position: relative;
+    left: 7vw;
+    bottom: 48vh;
+  }
+} 
+
+/*############### 1600px < ###################*/
+@media screen and (min-width:1600px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 60vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 20vw 40vw;
+    grid-template-rows: 10vh 70vh;
+    grid-template-areas:
+      "box1 box2"
+      "box3 box3";
+  }
+  .logo {
+    grid-area: box1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .logo img {
+    width: 10vw;
+    height: 6vh;
+  }
+
+  .menu {
+    grid-area: box2;
+    width: 100%;
+  }
+  .menu-list {
+    width: auto;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  ul li {
+    list-style: none;
+    margin: 0 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+  }
+  .hamburger {
+    display: none;
+    background-color: black;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+  }
+
+  .content {
+    grid-area: box3;
+    display: flex;
+    flex-direction: row;
+  }
+  .text {
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .title {
+    width: 30vw;
+    height: 23.3vh;
+    font-size: 2.5vw;
+    display: flex;
+    align-items: flex-end;
+  }
+  .text-box {
+    width: 30vw;
+    height: 23.3vh;
+    display: flex;
+    align-items: center;
+  }
+  .buttons {
+    width: 30vw;
+    height: 23.3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .buttons input {
+    width: 12vw;
+    height: 5vh;
+    background-color: #29be56;
+    margin-right: 1vw;
+    border-radius: 8%;
+    border: none;
+    font-weight: bold;
+  }
+  input:last-child {
+    background-color: #3498db;
+  }
+
+  .photo {
+    width: 30vw;
+    height: 70vh;
+  }
+  .photo img:first-child {
+    width: 13vw;
+    height: 50vh;
+    position: relative;
+    left: 14vw;
+  }
+  .photo img:last-child {
+    width: 13vw;
+    height: 50vh;
+    position: relative;
+    left: -7vw;
+    top: 5vh;  
+  }
+} 
