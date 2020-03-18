@@ -22,9 +22,9 @@
 <p align="center">
     <img src="https://i.imgur.com/lUT5aKI.png?1">
 </p>
-<p align="center">
+<!-- <p align="center">
     <img src="https://i.imgur.com/dajWDcD.png?1">
-</p>
+</p> -->
 
 ## iPad version 
 
