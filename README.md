@@ -14,6 +14,9 @@
 * ![Imgur](https://i.imgur.com/dajWDcD.png?1) -->
 
 <p align="center">
+  <img src="https://media.giphy.com/media/W1eYK8w5XPOlKohm4I/giphy.gif">
+</p>
+<p align="center">
   <img src="https://i.imgur.com/W7OGbpA.png?1">
 </p>
 <p align="center">
