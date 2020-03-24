@@ -67,6 +67,7 @@ body {
     clip-path: circle(10px at 90% -10%);
     -webkit-clip-path: circle(10px at 90% -40%);
     transition: all 1s ease-out;
+    z-index: 1;
   }
 
   .menu-list.open{
