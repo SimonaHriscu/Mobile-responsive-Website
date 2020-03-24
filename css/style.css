@@ -40,10 +40,11 @@ body {
   }
   .menu {
     width: 100vw;
-    height: 8vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
   }
   .hamburger-line-menu {
     display: block;
@@ -67,7 +68,7 @@ body {
     clip-path: circle(10px at 90% -10%);
     -webkit-clip-path: circle(10px at 90% -40%);
     transition: all 1s ease-out;
-    z-index: 1;
+    z-index: 3;
   }
 
   .menu-list.open{
@@ -154,7 +155,7 @@ body {
 
   .content {
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     overflow-y: scroll;
   }
 
@@ -170,7 +171,7 @@ body {
     height: 17vh;
     font-size: 3.8vh;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     text-align: center;
   }
   .text-box {
@@ -206,14 +207,14 @@ body {
   .photo {
     width: 100vw;
     height: 80vh;
-    z-index: -1;
+    z-index: 0;
   }
   .photo img:first-child {
     width: 60vw;
     height: 70vh;
     position: relative;
     left:30vw;
-    
+    z-index: 1;
   }
   .photo img:last-child {
     width: 60vw;
@@ -221,7 +222,7 @@ body {
     position: relative;
     bottom: 60vh;
     left: 10vw;
-    
+    z-index: 2;
   } 
 }
 
