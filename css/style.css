@@ -20,7 +20,7 @@ body {
 /*###############Mobile < 600px#####################*/
 @media only screen and (max-width: 600px) {
   .container {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -35,22 +35,23 @@ body {
     
   }
   .logo img {
-    width: 33vw;
+    width: 35vw;
     height: 8vh;
   }
   .menu {
     width: 100vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    height: 10vh;
+   
   }
   .hamburger-line-menu {
-    display: block;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     background-color: white;
     width: 7vw;
+    position: relative;
+    top:1vh;
     height: 0.6vh;
     margin: 6px 0;
   }
@@ -174,7 +175,7 @@ body {
     height: 17vh;
     font-size: 3.8vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
   }
   .text-box {
