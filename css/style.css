@@ -206,6 +206,7 @@ body {
   .photo {
     width: 100vw;
     height: 80vh;
+    z-index: -1;
   }
   .photo img:first-child {
     width: 60vw;
