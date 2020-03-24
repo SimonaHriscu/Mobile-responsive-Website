@@ -20,7 +20,7 @@ body {
 /*###############Mobile < 600px#####################*/
 @media only screen and (max-width: 600px) {
   .container {
-    /* width: 100vw; */
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -28,33 +28,34 @@ body {
   }
   .logo {
     width: 100vw;
-    height: 15vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
     
   }
   .logo img {
-    width: 35vw;
-    height: 8vh;
+    width: 33vw;
+    height: 7vh;
   }
   .menu {
     width: 100vw;
-    height: 10vh;
-   
-  }
-  .hamburger-line-menu {
+    height: 12vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    justify-content: center;
+  }
+  /* .hamburger-line-menu {
+    display: block;
     background-color: white;
     width: 7vw;
-    position: relative;
-    top:1vh;
     height: 0.6vh;
     margin: 6px 0;
-  }
+    position: relative;
+    top: 1vh;
+  } */
   .menu-list {
     position: fixed;
     background: #07492541;
@@ -90,15 +91,16 @@ body {
   }
   /* The hamburger animation */
   .hamburger-line-menu {
-    margin: 30px auto;
     background-color: transparent;
-    width: 4rem;
-    height: 3.5rem;
+    width: 14vw;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
     transform: translate(-5%, -50%);
+    position: relative;
+    top:4vh;
    
   }
   .hamburger-line{
@@ -138,7 +140,7 @@ body {
     }
     100%{
       top: 10px;
-      transform: rotate(590deg);
+      transform: rotate(585deg);
       background-color: #07492541;
     }
   }
@@ -151,8 +153,8 @@ body {
     }
   
     to {
-      top: -11px;
-      transform: rotate(-410deg);
+      top: -9px;
+      transform: rotate(-405deg);
       background-color: #07492541;
     }
   }
@@ -188,7 +190,7 @@ body {
   }
   .buttons {
     width: 100vw;
-    height: 25vh;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -211,14 +213,14 @@ body {
   .photo {
     width: 100vw;
     height: 80vh;
-    z-index: 0;
+    /* z-index: 0; */
   }
   .photo img:first-child {
     width: 60vw;
     height: 70vh;
     position: relative;
     left:30vw;
-    z-index: 1;
+    /* z-index: 1; */
   }
   .photo img:last-child {
     width: 60vw;
@@ -226,7 +228,7 @@ body {
     position: relative;
     bottom: 60vh;
     left: 10vw;
-    z-index: 2;
+    /* z-index: 2; */
   } 
 }
 
