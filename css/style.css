@@ -45,7 +45,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .hamburger {
+  .hamburger-line-menu {
     display: block;
     background-color: white;
     width: 7vw;
@@ -53,8 +53,104 @@ body {
     margin: 6px 0;
   }
   .menu-list {
-    display: none;
+    position: fixed;
+    background: #07492541;
+    /* height: 100vh;
+    width: 100vw; */
+    height: 60vh; 
+    width: 50vw;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: none;  */
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -40%);
+    transition: all 1s ease-out;
   }
+
+  .menu-list.open{
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+  }
+  .menu-item{
+    margin: 5vh;
+    list-style: none;
+    font-size: 2.5vw;
+  }
+  .menu-item:hover{
+    color:transparent;
+    cursor: default;
+  }
+  /* The hamburger animation */
+  .hamburger-line-menu {
+    margin: 30px auto;
+    background-color: transparent;
+    width: 4rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: translate(-5%, -50%);
+   
+  }
+  .hamburger-line{
+    width: 3rem;
+    height: 0.4rem;
+    background-color:white;
+    border-radius: 20%;
+  }
+  .hamburger-line-menu:hover .hamburger-line.one{
+    position: relative;
+    animation-name: revert;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  .hamburger-line-menu:hover .hamburger-line.sec{
+    position: relative;
+    animation-name: revert2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    
+  }
+  
+  
+  @keyframes revert{
+    0% {
+      top: 0px;
+      transform: rotate(0deg);
+      background-color: white;
+    }
+  
+    50% {
+      top: 10px;
+      transform: rotate(360deg);
+      background-color: #3498db;
+    }
+    100%{
+      top: 10px;
+      transform: rotate(590deg);
+      background-color: #07492541;
+    }
+  }
+
+  @keyframes revert2{
+    from {
+      top: 0px;
+      transform: rotate(0deg);
+      background-color: white;
+    }
+  
+    to {
+      top: -11px;
+      transform: rotate(-410deg);
+      background-color: #07492541;
+    }
+  }
+
   .content {
     width: 100vw;
     height: 80vh;
